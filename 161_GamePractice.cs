@@ -146,20 +146,12 @@ namespace Project1
                 UserX--;
                 PrintUser();
             }
-            else
-            {
-                PrintUser();
-            }
 
             if ((GetKeyState(VK_RIGHT) & KeyPressed) != 0)
             {
                 UserX++;
                 Console.SetCursorPosition(UserX - 1, UserY);
                 Console.Write("   ");
-                PrintUser();
-            }
-            else
-            {
                 PrintUser();
             }
 
@@ -170,10 +162,7 @@ namespace Project1
                 Console.Write("  ");
                 PrintUser();
             }
-            else
-            {
-                PrintUser();
-            }
+
             if ((GetKeyState(VK_DOWN) & KeyPressed) != 0)
             {
                 UserY++;
@@ -186,7 +175,6 @@ namespace Project1
             {
                 PrintUser();
             }
-
 
             if ((GetKeyState(VK_SPACE) & KeyPressed) != 0)
             {
